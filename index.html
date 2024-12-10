@@ -22,7 +22,7 @@
 
             <!-- Greetings and instructions -->
             <div class="text-center mb-4">
-                <h1>What is your Fantasy Hero Name?</h1>
+                <h1>What is your Hockey Nickname?</h1>
                 <p>Fill out the form below to generate your fantasy name!</p>
             </div>
             <!-- Information input form-->
@@ -64,17 +64,35 @@
                         placeholder="Enter your favorite animal">
                 </div>
 
+                <!-- Favorite Hockey Team selection with placeholder -->
+                <div class="mb-3">
+                    <label for="favoriteHockeyTeam" class="form-label">Favorite Hockey Team</label>
+                    <select id="favoriteHockeyTeam" class="form-select">
+                        <option value="" selected disabled>Select your favorite hockey team</option>
+                        <option value="New York Rangers">New York Rangers</option>
+                    </select>
+                </div>
+
+                <!-- Preferred Position selection -->
+                <div class="mb-3">
+                    <label for="preferredPosition" class="form-label">What is your preferred position?</label>
+                    <select id="preferredPosition" class="form-select">
+                        <option value="" selected disabled>Select your preferred position</option>
+                        <option value="Right Wing">Right Wing</option>
+                        <option value="Left Wing">Left Wing</option>
+                        <option value="Center">Center</option>
+                        <option value="Goalie">Goalie</option>
+                        <option value="Left Defense">Left Defense</option>
+                        <option value="Right Defense">Right Defense</option>
+                    </select>
+                </div>
+
+
                 <!-- Generate Name Button -->
                 <div class="text-center">
                     <button type="button" class="btn btn-primary btn-lg" id="generateNameBtn">Generate Name</button>
-
                 </div>
             </form>
-
-            <!-- Display Generated Name -->
-            <div class="mb-3">
-                <h2 id="generatedName"></h2>
-            </div>
 
         </div>
     </main>
