@@ -4,50 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy Name Generator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        label, input, select, button {
-            display: block;
-            margin: 10px 0;
-        }
-        button {
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Fantasy Name Generator</h1>
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName">
+    <div class="container">
+        <h1>Fantasy Name Generator</h1>
+        <form id="fantasyForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="Enter your first name" required>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="Enter your last name" required>
 
-    <label for="roadType">Choose a road type:</label>
-    <select id="roadType">
-        <option value="">--Select an option--</option>
-        <option value="Road">Road</option>
-        <option value="Street">Street</option>
-        <option value="Ave">Avenue</option>
-        <option value="Other">Other</option>
-    </select>
+            <label for="roadType">Favorite Road Type:</label>
+            <select id="roadType" required>
+                <option value="Road">Road</option>
+                <option value="Street">Street</option>
+                <option value="Ave">Avenue</option>
+                <option value="Other">Other</option>
+            </select>
 
-    <label for="favoriteColor">Favorite Color:</label>
-    <input type="text" id="favoriteColor">
+            <label for="favoriteColor">Favorite Color:</label>
+            <input type="text" id="favoriteColor" placeholder="Enter your favorite color" required>
 
-    <label for="favoriteAnimal">Favorite Animal:</label>
-    <input type="text" id="favoriteAnimal">
+            <label for="favoriteAnimal">Favorite Animal:</label>
+            <input type="text" id="favoriteAnimal" placeholder="Enter your favorite animal" required>
 
-    <button id="generateNameBtn">Generate Fantasy Name</button>
+            <button type="button" id="generateNameBtn">Generate Fantasy Name</button>
+        </form>
+    </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
